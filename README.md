@@ -38,4 +38,19 @@
 
 
 
+# Algorithm-Binary-Research-in-Sorted-Array
+정렬된 배열에서 특정 원소의 개수 구하는 이진 탐색 알고리즘
 
+
+### 정의 
+: 정렬된 배열에서 값이 특정 범위에 해당하는 원소의 개수를 계산할 때 사용하는 알고리즘 
+
+
+`lowerBound()`함수와 `upperBound()`함수를 사용해 `countByRange()`함수를 만들어 해결한다.
+
+<br/>
+
+### 하한선 함수와 상한선 함수
+- `lowerBound(arr, x)` : 정렬된 순서를 유지하면서 배열 arr에 x를 넣을 **가장 왼쪽 인덱스를 반환**
+- `upperBound(arr, x)` : 정렬된 순서를 유지하면서 배열 arr에 x를 넣을 **가장 오른쪽 인덱스를 반환**
+=> **특정 범위에 속하는 원소의 개수** = upperBound(arr,x) - lowerBound(arr,x)
