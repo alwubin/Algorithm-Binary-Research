@@ -1,4 +1,4 @@
-# Algorithm-Binary-Research
+# Algorithm-Binary-Search
 이진 탐색 알고리즘 
 
 ### 정의 
@@ -38,12 +38,12 @@
 
 
 
-# Algorithm-Binary-Research-in-Sorted-Array
+# Algorithm-Binary-Search-in-Sorted-Array
 정렬된 배열에서 특정 원소의 개수 구하는 이진 탐색 알고리즘
 
 
 ### 정의 
-: 정렬된 배열에서 값이 특정 범위에 해당하는 원소의 개수를 계산할 때 사용하는 알고리즘 
+: 정렬된 배열에서 값이 **특정 범위에 해당하는 원소의 개수를 계산**할 때 사용하는 알고리즘 
 
 
 `lowerBound()`함수와 `upperBound()`함수를 사용해 `countByRange()`함수를 만들어 해결한다.
@@ -54,3 +54,19 @@
 - `lowerBound(arr, x)` : 정렬된 순서를 유지하면서 배열 arr에 x를 넣을 **가장 왼쪽 인덱스를 반환**
 - `upperBound(arr, x)` : 정렬된 순서를 유지하면서 배열 arr에 x를 넣을 **가장 오른쪽 인덱스를 반환**
 => **특정 범위에 속하는 원소의 개수** = upperBound(arr,x) - lowerBound(arr,x)
+
+<br/>
+
+# Algorithm-Parametric-Search
+파라메트릭 서치 알고리즘
+
+
+### 정의 
+: 이진 탐색 조건을 사용해 **특정한 조건을 만족**하는 가장 알맞은 값을 빠르게 찾는 **최적화 문제**(최대값 최소값)를 해결하는 알고리즘
+
+<br/>
+
+### 파라메트릭 서치에서 이진 탐색 조건
+변경할(최적화할) 값 x에 대하여 f(x)가 단조 증가 혹은 단조 감소하는 함수인 경우에 사용할 수 있다. 
+
+
