@@ -17,6 +17,9 @@ while (start <= end) { //이진 탐색 수행 반복문
   for (x of arr) {
     total += Math.min(mid,x); //Math.max()도 될 수 있음 조건에 따라 다름
   }
-  if (total <= m){} //총 합이 조건에 있을 때 현재 총합과 조건에 명시된 총합 비교해서 start or end 수정
+  if (total <= m){
+    result = mid; //최댓값 또는 최솟값이기 때문에 기록하고자 하는 곳에 작성하기
+	  start = mid + 1;
+  } //총 합이 조건에 있을 때 현재 총합과 조건에 명시된 총합 비교해서 start or end 수정
 }
 console.log(result); 
